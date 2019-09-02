@@ -1,22 +1,18 @@
-var teamJohnAverage = (1500 + 94 + 123) / 3;
-var teamMikeAverage = (116 + 94 + 123) / 3; 
-var teamMaryAverage = (16516 + 94 + 123) / 3;
+// Why pay a fortune teller when you can just program your fortune yourself ?
 
-// var highestAverage = teamJohnAverage > teamMikeAverage ? 
-//  console.log('Team John is the winner with a score of '+ teamJohnAverage): 
-//     console.log('Team Mike is the winner with a score of ' + teamMikeAverage);
+//     Write a function named tellFortune that:
+// takes 4 arguments: number of children, partner's name, geographic location, job title.
+// outputs your fortune to the screen like so: "You will be a X in Y, and married to Z with N kids."
+// Call that function 3 times with 3 different values for the arguments.
 
-var highestAverage;
-switch(true) {
-    case highestAverage = teamJohnAverage > teamMikeAverage && teamJohnAverage > teamMaryAverage:
-        console.log('Team John is the winner with a score of '+ teamJohnAverage);
-        break;
-        case highestAverage = teamMikeAverage > teamJohnAverage && teamMikeAverage > teamMaryAverage:
-        console.log('Team Mike is the winner with a score of ' + teamMikeAverage);
-        break; 
-        case highestAverage = teamMaryAverage > teamJohnAverage && teamMaryAverage > teamMikeAverage:
-            console.log('Team Mary is the winner with a score of ' + teamMaryAverage);
-            break;
-        default: 
-        console.log("It's a draw!! lol");
+function tellFortune(numberOfChildren, partnerName, geoLocation, job) {
+    var fortune = ("You will be a " + job + "in " + geoLocation + ',' + "and married to " + partnerName + "with " + numberOfChildren
+        + 'kids')
+    alert(fortune);
 }
+
+var numberOfChildren = prompt("pick a number from 1-4?");
+var partnerName = prompt("Tell me your partner's name");
+var geoLocation = prompt("where do you live");
+var job = prompt("what do you want to be when you're older?");
+console.log(tellFortune(numberOfChildren, partnerName, geoLocation, job));
