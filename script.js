@@ -130,6 +130,7 @@ console.log(john.calcAge());
 
 // function expressions vs function declaration
 
+/*
 var mark = {
     fullName : 'Mark',
     mass : 62,
@@ -159,3 +160,127 @@ if (john.bmi > mark.bmi) {
 } else {
     console.log("it's a draw");
 }
+*/
+/*
+//For loops
+john = ['hat', 25, 'cake', 'random data'];
+for (var i = 0; i < john.length; i++) {
+console.log(john[i]);
+}
+
+//While loops
+//in while loop we only have the condition
+var i = 0;
+while(i < john.length) {
+    console.log([i]);
+    i++;
+}
+*/
+//both are the exact same thing.
+
+//continue and break statements
+
+// john = ['hat', 25, 'cake', 'random data'];
+// for (var i = 0; i < john.length; i++) {
+//     if (typeof john[i] !== 'string') continue;
+//     console.log(john[i]);
+// }
+
+
+// john = ['hat', 25, 'cake', 'random data'];
+// for (var i = 0; i < john.length; i++) {
+//     if (typeof john[i] !== 'string') break;
+//     console.log(john[i]);
+// }
+
+//break will stop the whole lopp
+//continue will keep going but ignoring the difference
+
+//Loops and Iteration
+/*for (var i = 0; i < 10; i++) {
+    console.log(i)
+}
+*/
+//i is a standar variable and will be updated in every loop
+
+//while loop- we only have the condition
+/*
+var john = ['cat', 'dog', 'cake', 'rad'];
+var i = 0;
+while(i < john.length) {
+    console.log(john[i]);
+    i++;
+}
+*/
+//continued & break statements
+//continue quits the current iteriation of the loop
+//eg:
+/*
+var john = ['rad', 'random', 'more random', 1990, 'lol', 1234];
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') continue;
+    console.log(john[i]);
+}
+//this skips anything that isn't a string for example.
+//break on the otherhand, stops the loop completely 
+var john = ['rad', 'random', 'more random', 1990, 'lol', 1234];
+for (var i = 0; i < john.length; i++) {
+    if (typeof john[i] !== 'string') break;
+    console.log(john[i]);
+}
+
+//looping backwards
+for (var i = john.length -1; i >= 0; i--) {
+    console.log(john[i]);
+}
+*/
+
+/*
+var john = {
+    restaurantBills: [124, 48, 268, 180, 42],
+    billCalc: function () {
+        this.tips = [];
+        this.finalValues = [];
+        for (var i = 0; i < this.restaurantBills.length; i++) {
+            var percentage;
+            var bills = this.restaurantBills[i];
+            if (bills < 50) {
+            percentage = .2;
+            } else if (bills >= 50 && bills < 200) {
+                percentage = .15; 
+                } else {
+                    percentage = .1;
+                }
+                this.tips[i] = bills * percentage;
+                this.finalValues[i] = bills + bills * percentage;
+            }
+        }
+    }
+john.billCalc();
+console.log(john);
+
+var mark = {
+    fullName : 'mark',
+    restaurantBills : [77, 475, 110, 45],
+    markBillCalc : function() {
+        this.tips = [];
+        this.finalValues = [];
+    for (var i = 0; < this.restaurantBills.length; i++) {
+            var percentage;
+            var bills = this.restaurantBills[i];
+            if (bills < 100) {
+                percentage = .2;
+            } else if (bills >= 100 && bills < 300) {
+                percentage = .10;
+            } else {
+                percentage = .25;
+            }
+            this.tips[i] = bills * percentage;
+            this.finalValues[i] = bills + bills * percentage;
+        }
+    }
+}
+
+
+*/
+
